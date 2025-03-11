@@ -2,7 +2,6 @@
     <div class="person">
         <h2>name: {{name}}</h2>
         <h2>age: {{age}}</h2>
-        <h2>address: {{address}}</h2>
         <button @click="changeName">Edit Name</button>
         <button @click="changeAge">Edit Age</button>
         <button @click="showTel">check contact</button>
@@ -12,25 +11,28 @@
 <script lang="ts">
     export default {
         name:'Person',
-        
-    }
-</script>
+        setup() {
+            let name = 'Dave'
+            let age = 18
+            let tel = '1388686111'
 
-<script setup lang="ts">
-    let name='Will'
-    let age=40
-    let address='Lancaster'
+            function changeName() {
+                name = 'David'
+            }
 
-    function changeName() {
-        name='William'
-    }
+            function changeAge() {
+                age = 21
+            }
 
-    function changeAge() {
-        age = 21
-    }
+            function showTel() {
+                alert(tel)
+            }
 
-    function showTel() {
-        alert(tel)
+            return {name, age, tel, changeName, changeAge, showTel}
+            // return function(){
+            //     return 'haha'
+            // }
+        }
     }
 </script>
 
