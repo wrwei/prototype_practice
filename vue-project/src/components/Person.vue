@@ -1,37 +1,22 @@
 <template>
     <div class="person">
-        <h2>name: {{name}}</h2>
-        <h2>age: {{age}}</h2>
-        <h2>address: {{address}}</h2>
-        <button @click="changeName">Edit Name</button>
-        <button @click="changeAge">Edit Age</button>
-        <button @click="showTel">check contact</button>
+        <h2>The sum is: {{ sum }}</h2>
+        <button @click="changeSum">Sum+1</button>
     </div>
 </template>
 
-<script lang="ts">
-    export default {
-        name:'Person',
+<script setup lang="ts" name="Person">
+    import {ref, watch} from 'vue'
+    let sum = ref(0)
+    
+    function changeSum() {
+        sum.value += 1
+    }
+
+    //watch
+    watch(sum, ()=> {
         
-    }
-</script>
-
-<script setup lang="ts">
-    let name='Will'
-    let age=40
-    let address='Lancaster'
-
-    function changeName() {
-        name='William'
-    }
-
-    function changeAge() {
-        age = 21
-    }
-
-    function showTel() {
-        alert(tel)
-    }
+    }) 
 </script>
 
 <style scoped>
@@ -44,4 +29,7 @@
     button {
         margin: 5px;
     }
-</style>
+    li{
+        font-size: 20px;
+    }
+</style> 
