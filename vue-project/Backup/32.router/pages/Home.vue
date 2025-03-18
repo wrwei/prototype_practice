@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home">
         <img src="https://images.dog.ceo/breeds/pembroke/n02113023_15144.jpg" alt="">
     </div>
 </template>
@@ -12,6 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 120%;
 }
 </style>

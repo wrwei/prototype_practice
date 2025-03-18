@@ -5,6 +5,15 @@
 </template>
 
 <script setup lang="ts" name="About">
+    import { onMounted, onUnmounted } from 'vue';
+
+    onMounted(()=>{
+        console.log('About mounted')
+    })
+
+    onUnmounted(()=>{
+        console.log('About unmounted')
+    })
 </script>
 
 <style scoped>
