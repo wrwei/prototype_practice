@@ -1,0 +1,27 @@
+{
+  "accounts": [
+    {
+      "title": "payroll",
+      "time": "2025-03-30",
+      "type": "1",
+      "account": "3400",
+      "remarks": "my salary"
+    },
+    {
+      "id": "j_iUZmdG3",
+      "title": "laptop",
+      "time": "2025-02-28",
+      "type": "-1",
+      "account": "1400",
+      "remarks": "buy computer"
+    },
+    {
+      "id": "nYPwHgCWa",
+      "title": "123",
+      "time": "2025-03-27",
+      "type": "1",
+      "account": "3400",
+      "remarks": ""
+    }
+  ]
+}
