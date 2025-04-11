@@ -7,7 +7,8 @@ mongoose.connection.once('open', ()=>{
     let bookSchema = new mongoose.Schema({
         name: {
             type: String,
-            required: true
+            required: true,
+            unique: true
         }, 
         author: {
             type: String,
